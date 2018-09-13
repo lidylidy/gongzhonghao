@@ -1,0 +1,140 @@
+{
+  "code": 200,
+  "msg": "获取悬赏任务成功",
+  "data": [
+    {
+      "nickname": "懒懒",
+      "avatar": "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/1536661171059.JPEG",
+      "user_id": "5b9790bbd3adac6089ebad50",
+      "rank": 0,
+      "is_vip": 0,
+      "id": "5b99dadd9e5e8511bad3c5a9",
+      "images": [
+        "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/41F89F130FEA62D403B6C89D59AB0A52"
+      ],
+      "publish_school": [
+        "10002"
+      ],
+      "task_spend": 0,
+      "task_address": "北京市",
+      "task_type": "10001",
+      "task_type_name": "社交",
+      "task_type_child": "交友",
+      "title": "1",
+      "end_time": 1536809654000,
+      "created": 1536809693920
+    },
+    {
+      "nickname": "懒懒",
+      "avatar": "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/1536661171059.JPEG",
+      "user_id": "5b9790bbd3adac6089ebad50",
+      "rank": 0,
+      "is_vip": 0,
+      "id": "5b98cf9e8f8cf8468711759d",
+      "images": [
+        "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/153674127813779.jpg"
+      ],
+      "publish_school": [
+        "10001"
+      ],
+      "task_spend": 0,
+      "task_address": "北京市",
+      "task_type": "10001",
+      "task_type_name": "社交",
+      "task_type_child": "交友",
+      "title": "男",
+      "end_time": 1536628800000,
+      "created": 1536741278334
+    },
+    {
+      "nickname": "0000",
+      "avatar": "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/8516E0F87AE19B3AF24FE62B3E2E2E77",
+      "user_id": "5b979545885d5360aaeb9979",
+      "rank": 0,
+      "is_vip": 0,
+      "id": "5b98cdcb3330a9468d6426e0",
+      "images": [
+        "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/50E354C1C054984DF4059730316C1103",
+        "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/C2C824EAC3EAD4C08BE8FF24D87A930D",
+        "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/B6354AC2A0F12F4E0BA3F663370CA4C9"
+      ],
+      "publish_school": [
+        "10001"
+      ],
+      "task_spend": 0,
+      "task_address": "北京市",
+      "task_type": "10001",
+      "task_type_name": "社交",
+      "task_type_child": "求偶",
+      "title": "来来来",
+      "end_time": 1538036845000,
+      "created": 1536740811942
+    },
+    {
+      "nickname": "蛮蛮",
+      "avatar": "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/153672227145042.jpg",
+      "user_id": "5b98855f04dde51615c85e5c",
+      "rank": 0,
+      "is_vip": 0,
+      "id": "5b98c1c88cf4e63b29a8102d",
+      "images": [
+        "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/153673773641176.jpg"
+      ],
+      "publish_school": [
+        "10002"
+      ],
+      "task_spend": 0,
+      "task_address": "天津市",
+      "task_type": "10004",
+      "task_type_name": "教育",
+      "task_type_child": "求师",
+      "title": "测试3",
+      "end_time": 1536891000000,
+      "created": 1536737736509
+    },
+    {
+      "nickname": "0000",
+      "avatar": "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/8516E0F87AE19B3AF24FE62B3E2E2E77",
+      "user_id": "5b979545885d5360aaeb9979",
+      "rank": 0,
+      "is_vip": 0,
+      "id": "5b98c18169d6123b1067c273",
+      "images": [
+        "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/153673766536622.jpg"
+      ],
+      "publish_school": [
+        "10001"
+      ],
+      "task_spend": 0,
+      "task_address": "北京市",
+      "task_type": "10002",
+      "task_type_name": "职场",
+      "task_type_child": "求职",
+      "title": "测试2",
+      "end_time": 1537513800000,
+      "created": 1536737665560
+    },
+    {
+      "nickname": "蛮蛮",
+      "avatar": "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/153672227145042.jpg",
+      "user_id": "5b98855f04dde51615c85e5c",
+      "rank": 0,
+      "is_vip": 0,
+      "id": "5b98c14e8cf4e63b29a8102c",
+      "images": [
+        "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/153673761436287.jpg"
+      ],
+      "publish_school": [
+        "10111"
+      ],
+      "task_spend": 0,
+      "task_address": "南京市",
+      "task_type": "10005",
+      "task_type_name": "健康",
+      "task_type_child": "求医",
+      "title": "测试",
+      "end_time": 1537514700000,
+      "created": 1536737614562
+    }
+  ]
+}

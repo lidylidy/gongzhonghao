@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <meta name="format-detection" content="telephone=no" >   
+    <!-- //禁止自动识别数字为手机号码 -->
+    <meta name="apple-mobile-web-app-capable" content="yes"> 
+    <!-- // 去掉苹果工具栏和菜单栏 -->
+    <meta name="apple-touch-fullscreen" content="yes">
+    <link rel="stylesheet" href="../../common/css/base.css">
+    <link rel="stylesheet" href="./taskList.css">
+</head>
+<script>
+(function (doc, win) {
+    var docEl = doc.documentElement,
+      resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+      recalc = function () {
+        var clientWidth = docEl.clientWidth;
+        if (!clientWidth) return;
+        if(clientWidth>=750){
+          docEl.style.fontSize = '20px';
+        }else{
+          docEl.style.fontSize = 100 * (clientWidth / 375) + 'px';
+        }
+      };
+ 
+  if (!doc.addEventListener) return;
+  win.addEventListener(resizeEvt, recalc, false);
+  doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+</script>
+
+<body>
+<header>名校邦</header>
+<div id="lists">
+
+</div>
+<div class="ballon f14">发任务</div>
+<script id="taskList" type="text/html">
+    {{each data}}
+    <div class="list">
+        <div class="left fl">
+            <i>1</i>
+            <span>{{$value.rank}}</span>
+        </div>
+        <div class="center fl">
+            <p class="title f14">{{$value.title}} | {{$value.task_spend}}</p>
+            <p class="content f14">{{data.test}}</p>
+            <div>
+                <span class="f14">2018-9-9 18:00</span>
+                <span>0</span>
+            </div>
+        </div>
+        <div class="right fr">
+            <div>
+                <a href="#" class="f12">查看详情</a>
+            </div>
+            <div>
+                <i>￥</i>
+                <span>{{$value.task_spend}}</span>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+
+</script>
+</body>
+
+<!--************888888-->
+<script src="../../node_modules/jquery/dist/jquery.min.js">
+</script>
+<script src ="../../common/js/template.js"></script>
+<script>
+ $(document).ready(function(){
+     var data ={
+         "code": 200,
+         "msg": "获取悬赏任务成功",
+         "data": [
+             {
+                 "nickname": "啪啪啪啪啪啪",
+                 "avatar": "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/F4CFD29B669B715E034971538FE97350",
+                 "user_id": "5b98ded866a6b873966e8ab7",
+                 "rank": 0,
+                 "is_vip": 0,
+                 "id": "5b9a2922103fdd4276d6475b",
+                 "images": [
+                     "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/C6D0AE44CA54461268ED7098031464CB"
+                 ],
+                 "publish_school": [],
+                 "task_spend": 500,
+                 "task_address": "北京市",
+                 "task_type": "10001",
+                 "task_type_name": "社交",
+                 "task_type_child": "求偶",
+                 "title": "99999",
+                 "text": "9999",
+                 "end_time": 1536851313000,
+                 "created": 1536829730553
+             },
+             {
+                 "nickname": "懒懒",
+                 "avatar": "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/1536661171059.JPEG",
+                 "user_id": "5b9790bbd3adac6089ebad50",
+                 "rank": 0,
+                 "is_vip": 0,
+                 "id": "5b9a2174735d3e14b6e956fc",
+                 "images": [
+                     "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/1536827763105.JPEG"
+                 ],
+                 "publish_school": [],
+                 "task_spend": 100,
+                 "task_address": "北京市",
+                 "task_type": "10006",
+                 "task_type_name": "项目",
+                 "task_type_child": "求售",
+                 "title": "2",
+                 "text": "2",
+                 "end_time": 1536858118000,
+                 "created": 1536827764279
+             },
+             {
+                 "nickname": "懒懒",
+                 "avatar": "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/1536661171059.JPEG",
+                 "user_id": "5b9790bbd3adac6089ebad50",
+                 "rank": 0,
+                 "is_vip": 0,
+                 "id": "5b9a20cecc008514c6388050",
+                 "images": [
+                     "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/1536827597513.JPEG"
+                 ],
+                 "publish_school": [],
+                 "task_spend": 10000,
+                 "task_address": "北京市",
+                 "task_type": "10003",
+                 "task_type_name": "知识",
+                 "task_type_child": "求教",
+                 "title": "1",
+                 "text": "1",
+                 "end_time": 1536827651000,
+                 "created": 1536827598431
+             },
+             {
+                 "nickname": "朱波测试",
+                 "avatar": "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/1536811379691.JPEG",
+                 "user_id": "5b979114b3e667609e4134ff",
+                 "rank": 0,
+                 "is_vip": 0,
+                 "id": "5b9a1e6ff198e90c353233a8",
+                 "images": [
+                     "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/1536826990501.JPEG"
+                 ],
+                 "publish_school": [],
+                 "task_spend": 1000,
+                 "task_address": "北京市",
+                 "task_type": "10001",
+                 "task_type_name": "社交",
+                 "task_type_child": "交友",
+                 "title": "测试截止时间",
+                 "text": "截止时间精确到分",
+                 "end_time": 1541012436000,
+                 "created": 1536826991379
+             },
+             {
+                 "nickname": "啪啪啪啪啪啪",
+                 "avatar": "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/F4CFD29B669B715E034971538FE97350",
+                 "user_id": "5b98ded866a6b873966e8ab7",
+                 "rank": 0,
+                 "is_vip": 0,
+                 "id": "5b9a1a47241f2e6125a12c28",
+                 "images": [
+                     "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/60D1D1F601E9488100DCE0194E34AE12"
+                 ],
+                 "publish_school": [],
+                 "task_spend": 5000,
+                 "task_address": "北京市",
+                 "task_type": "10001",
+                 "task_type_name": "社交",
+                 "task_type_child": "求偶",
+                 "title": "88888",
+                 "text": "88888",
+                 "end_time": 1536842443000,
+                 "created": 1536825927940
+             },
+             {
+                 "nickname": "啪啪啪啪啪啪",
+                 "avatar": "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/F4CFD29B669B715E034971538FE97350",
+                 "user_id": "5b98ded866a6b873966e8ab7",
+                 "rank": 0,
+                 "is_vip": 0,
+                 "id": "5b9a1951db4410613c1043ed",
+                 "images": [
+                     "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/719E122A33ACE0B5F6A4012ED59A6CC9"
+                 ],
+                 "publish_school": [],
+                 "task_spend": 0,
+                 "task_address": "北京市",
+                 "task_type": "10001",
+                 "task_type_name": "社交",
+                 "task_type_child": "求偶",
+                 "title": "6666",
+                 "text": "66666",
+                 "end_time": 1536825661000,
+                 "created": 1536825681044
+             },
+             {
+                 "nickname": "啪啪啪啪啪啪",
+                 "avatar": "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/F4CFD29B669B715E034971538FE97350",
+                 "user_id": "5b98ded866a6b873966e8ab7",
+                 "rank": 0,
+                 "is_vip": 0,
+                 "id": "5b9a176f241f2e6125a12c24",
+                 "images": [
+                     "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/2615D5D4CBBCFFC43D99C2D968C4977A"
+                 ],
+                 "publish_school": [],
+                 "task_spend": 0,
+                 "task_address": "北京市",
+                 "task_type": "10001",
+                 "task_type_name": "社交",
+                 "task_type_child": "求偶",
+                 "title": "222222",
+                 "text": "222222",
+                 "end_time": 1536825182000,
+                 "created": 1536825199335
+             },
+             {
+                 "nickname": "啪啪啪啪啪啪",
+                 "avatar": "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/F4CFD29B669B715E034971538FE97350",
+                 "user_id": "5b98ded866a6b873966e8ab7",
+                 "rank": 0,
+                 "is_vip": 0,
+                 "id": "5b9a15c7e08a3b61205c1e23",
+                 "images": [
+                     "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/F4D6DBB2F630DDFFE433BD56E90A4B91"
+                 ],
+                 "publish_school": [],
+                 "task_spend": 0,
+                 "task_address": "北京市",
+                 "task_type": "10004",
+                 "task_type_name": "教育",
+                 "task_type_child": "求校",
+                 "title": "2222",
+                 "text": "111111",
+                 "end_time": 1536824712000,
+                 "created": 1536824775421
+             },
+             {
+                 "nickname": "懒懒",
+                 "avatar": "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/1536661171059.JPEG",
+                 "user_id": "5b9790bbd3adac6089ebad50",
+                 "rank": 0,
+                 "is_vip": 0,
+                 "id": "5b99dadd9e5e8511bad3c5a9",
+                 "images": [
+                     "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/41F89F130FEA62D403B6C89D59AB0A52"
+                 ],
+                 "publish_school": [
+                     "10002"
+                 ],
+                 "task_spend": 0,
+                 "task_address": "北京市",
+                 "task_type": "10001",
+                 "task_type_name": "社交",
+                 "task_type_child": "交友",
+                 "title": "1",
+                 "text": "1",
+                 "end_time": 1536809654000,
+                 "created": 1536809693920
+             },
+             {
+                 "nickname": "懒懒",
+                 "avatar": "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/1536661171059.JPEG",
+                 "user_id": "5b9790bbd3adac6089ebad50",
+                 "rank": 0,
+                 "is_vip": 0,
+                 "id": "5b98cf9e8f8cf8468711759d",
+                 "images": [
+                     "https://mxb-pub-r.oss-cn-zhangjiakou.aliyuncs.com/153674127813779.jpg"
+                 ],
+                 "publish_school": [
+                     "10001"
+                 ],
+                 "task_spend": 0,
+                 "task_address": "北京市",
+                 "task_type": "10001",
+                 "task_type_name": "社交",
+                 "task_type_child": "交友",
+                 "title": "男",
+                 "text": "男",
+                 "end_time": 1536628800000,
+                 "created": 1536741278334
+             }
+         ]
+     }
+//     数据在上面
+//     $.ajax({
+//         type: "GET",
+//         url: "https://test.globalmxb.com/api/v1/task/publishLists",
+//         data: "data",
+//         dataType: "dataType",
+//         success: function (response) {
+//
+//         },
+//         err:function(err){
+//            console.log(err);
+//         }
+//     });
+     console.log(data.data);
+     console.log(data.data[1]);
+     var html =template('taskList',data);
+     document.getElementById('lists').innerHTML = html;
+//    注册点击事件,跳转到发布界面
+     $(".ballon").click(function(){
+         $(window).attr('location','//www.baidu.com');
+     });
+    });   
+</script>
+
+</html>

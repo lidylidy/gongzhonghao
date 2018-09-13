@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <meta name="format-detection" content="telephone=no" >   
+    <!-- //禁止自动识别数字为手机号码 -->
+    <meta name="apple-mobile-web-app-capable" content="yes"> 
+    <!-- // 去掉苹果工具栏和菜单栏 -->
+    <meta name="apple-touch-fullscreen" content="yes">
+    <style>
+        .a{
+            width: 1rem;
+            height: 1rem;
+            background: blue;
+        }
+        .b{
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+    </style>
+    <link rel="stylesheet" href="../../common/css/base.css">
+    <link rel="stylesheet" href="./sendTask.css">
+</head>
+<script>
+(function (doc, win) {
+    var docEl = doc.documentElement,
+      resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+      recalc = function () {
+        var clientWidth = docEl.clientWidth;
+        if (!clientWidth) return;
+        if(clientWidth>=750){
+          docEl.style.fontSize = '20px';
+        }else{
+          docEl.style.fontSize = 100 * (clientWidth / 375) + 'px';
+        }
+      };
+ 
+  if (!doc.addEventListener) return;
+  win.addEventListener(resizeEvt, recalc, false);
+  doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+</script>
+
+<body>
+    <header></header>
+    <div class="title">
+        <input class="tit_1" type="text" class="" placeholder="请输入标题">
+    </div>
+    <div class="scribe">
+        <textarea class="text1" placeholder="请输入任务描述" maxlength="400"></textarea>
+        <div class="photoList">
+            <div class="icon">
+                <i></i>
+                <span>添加图片或拍照</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="payment">
+        <span>赏金</span>
+        <span>￥</span>
+        <span>元</span>
+
+    </div>
+    <footer>
+        <div class="top">
+            <div class="fl telText">联系方式</div>
+            <div class="pullDowm fl"></div>
+            <input class="fl " placeholder="请输入联系方式" type="text">
+        </div>
+        <div class="bot">发布</div>   
+    </footer>  
+</body>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+
+</html>

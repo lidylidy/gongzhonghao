@@ -1,0 +1,76 @@
+header{
+    height: 0.5rem;
+    width: 100%;
+    background-color:#2cced1;
+    text-align: center;
+    line-height: 0.5rem;
+}
+div{
+    /*background-color: #ccc;*/
+}
+.list{
+    /* height:70rem; */
+    padding: 0.1rem 0rem;
+    border-bottom:  #f6f6f6 solid 0.02rem;
+    display: flex;
+    /*background:yellowgreen;*/
+    align-items: center;
+    color:#ffffff;
+}
+.left{
+    color:#ffffff;
+    align-items:center;
+    display: flex;
+    width: 0.5rem;
+    height: 0.45rem;
+    /*background: pink;*/
+    flex-direction: column;
+    /* text-align: center; */ 
+}
+.center{
+    color:#ffffff;
+    width: calc( 100% - 1.3rem );
+    /*background: yellow;*/
+}
+.right{
+    color:#ffffff;
+    flex-direction: column;
+    width: 0.8rem;
+    display: flex;    
+    height: 0.5rem;
+    /*background: blue;*/
+    flex-direction: column;
+    align-items:center;
+}
+
+@keyframes scaleDraw {  /*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+    0%{
+        transform: scale(1);  /*开始为原始大小*/
+    }
+    25%{
+        transform: scale(1.1); /*放大1.1倍*/
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1.1);
+    }
+}
+.ballon{
+    position: fixed;
+    left: calc(50% - 0.25rem);
+    bottom: 0.5rem;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    color: white;
+    line-height: 0.5rem;
+    text-align: center;
+    background: green;
+    background-size: 150px 200px;
+    -webkit-animation-name: scaleDraw; /*关键帧名称*/
+    -webkit-animation-timing-function: ease-in-out; /*动画的速度曲线*/
+    -webkit-animation-iteration-count: infinite;  /*动画播放的次数*/
+    -webkit-animation-duration: 5s; /*动画所花费的时间*/
+}

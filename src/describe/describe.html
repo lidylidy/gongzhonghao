@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <meta name="format-detection" content="telephone=no" >   
+    <!-- //禁止自动识别数字为手机号码 -->
+    <meta name="apple-mobile-web-app-capable" content="yes"> 
+    <!-- // 去掉苹果工具栏和菜单栏 -->
+    <meta name="apple-touch-fullscreen" content="yes">
+    <link rel="stylesheet" href="../../common/css/base.css">
+    <link rel="stylesheet" href="describe.css">
+</head>
+<script>
+(function (doc, win) {
+    var docEl = doc.documentElement,
+      resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+      recalc = function () {
+        var clientWidth = docEl.clientWidth;
+        if (!clientWidth) return;
+        if(clientWidth>=750){
+          docEl.style.fontSize = '20px';
+        }else{
+          docEl.style.fontSize = 100 * (clientWidth / 375) + 'px';
+        }
+      };
+ 
+  if (!doc.addEventListener) return;
+  win.addEventListener(resizeEvt, recalc, false);
+  doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+</script>
+
+<body>
+<header>名校邦</header>
+<div class="title bot1">
+    去吃饭
+</div>
+<div class="text bot1">走，去吃</div>
+<div class="payment bot1">赏金：￥5元</div>
+<div class="tell">
+    <span>查看联系方式</span>
+</div>
+<div class="name">
+    <span>姓名:</span>
+    <input type="text"/>
+</div>
+<div class="postDiscuss">
+    <div class="top">
+        <span>评论：</span>
+        <textarea></textarea></div>
+    <div class="bot">
+        <input type="submit" name="提交"/>
+    </div>
+
+
+</div>
+<div class="list">
+    <div class="getDiscuss bot1 ">
+        <div class="top">
+            <div class="left fl f12">{{1}}:{{1}}
+            </div>
+            <div class="right f12 fr">(0)</div>
+        </div>
+        <div class="bot f12">
+            <i class="fl">时间</i>
+            <p class="fl">2018.9.11 18:22</p>
+        </div>
+    </div>
+</div>
+
+</body>
+<!--************888888-->
+<script id="taskList" type="text/html">
+    {{each data}}
+    {{/each}}
+</script>
+
+<script src="../../node_modules/jquery/dist/jquery.min.js">
+</script>
+<script src ="../../common/js/template.js"></script>
+<script>
+ $(document).ready(function(){
+//     数据在上面
+     $.ajax({
+         type: "GET",
+         url: "https://test.globalmxb.com/api/v1/task/publishLists",
+         data: "data",
+         dataType: "dataType",
+         success: function (response) {
+
+         },
+         err:function(err){
+            console.log(err);
+         }
+     });
+     console.log(data.data);
+     var html =template('taskList',data);
+     document.getElementById('lists').innerHTML = html;
+
+
+    });   
+</script>
+
+</html>
