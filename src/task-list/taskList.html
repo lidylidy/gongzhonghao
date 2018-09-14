@@ -39,24 +39,28 @@
 
 </div>
 <div class="ballon f14">发任务</div>
+<!--created 函数找不到？-->
+<!--{{$value.created | dateFormat:'yyyy-MM-dd h:m:s'}}-->
 <script id="taskList" type="text/html">
     {{each data}}
     <div class="list">
         <div class="left fl">
-            <i>1</i>
-            <span>{{$value.rank}}</span>
+            <i class="f14" >赞</i>
+            <span class="f14">{{$value.rank}}</span>
         </div>
         <div class="center fl">
             <p class="title f14">{{$value.title}} | {{$value.task_spend}}</p>
-            <p class="content f14">{{data.test}}</p>
+            <p class="content f14">{{$value.test}}</p>
             <div>
-                <span class="f14">2018-9-9 18:00</span>
+                <span class="f14">
+
+                    2018-9-9 18:00</span>
                 <span>0</span>
             </div>
         </div>
         <div class="right fr">
-            <div>
-                <a href="#" class="f12">查看详情</a>
+            <div class="f12">
+                查看详情
             </div>
             <div>
                 <i>￥</i>
@@ -296,26 +300,81 @@
          ]
      }
 //     数据在上面
-//     $.ajax({
-//         type: "GET",
-//         url: "https://test.globalmxb.com/api/v1/task/publishLists",
-//         data: "data",
-//         dataType: "dataType",
-//         success: function (response) {
-//
-//         },
-//         err:function(err){
-//            console.log(err);
-//         }
-//     });
+     $.ajax({
+         type: "GET",
+         url: "https://test.globalmxb.com/api/v1/task/publishLists",
+         data: "data",
+         dataType: "dataType",
+         success: function (response) {
+
+         },
+         err:function(err){
+            console.log(err);
+         }
+     });
      console.log(data.data);
-     console.log(data.data[1]);
+     console.log("时间搓");
+     console.log(data.data[1].created);
+     var date = new Date(data.data[1].created);
+     Y = date.getFullYear() + '-';
+     M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1) + '-';
+     D = date.getDate() + ' ';
+     h = date.getHours() + ':';
+     m = date.getMinutes() + ':';
+     s = date.getSeconds();
+     console.log(Y + M + D + h + m + s);
+
+
+//     编译时候搞时间戳
+//     template.helper('dateFormat', function (date, format) {
+//
+//         date = new Date(date);
+//         var map = {
+//             "M": date.getMonth() + 1, //月份
+//             "d": date.getDate(), //日
+//             "h": date.getHours(), //小时
+//             "m": date.getMinutes(), //分
+//             "s": date.getSeconds(), //秒
+//             "q": Math.floor((date.getMonth() + 3) / 3), //季度
+//             "S": date.getMilliseconds() //毫秒
+//         };
+//         format = format.replace(/([yMdhmsqS])+/g, function (all, t) {
+//             var v = map[t];
+//             if (v !== undefined) {
+//                 if (all.length > 1) {
+//                     v = '0' + v;
+//                     v = v.substr(v.length - 2);
+//                 }
+//                 return v;
+//             } else if (t === 'y') {
+//                 return (date.getFullYear() + '').substr(4 - all.length);
+//             }
+//             return all;
+//         });
+//         return format;
+//     });
+//     编译时候搞时间戳
+
+
+//     console.log(data.data[1]);
      var html =template('taskList',data);
      document.getElementById('lists').innerHTML = html;
 //    注册点击事件,跳转到发布界面
      $(".ballon").click(function(){
          $(window).attr('location','//www.baidu.com');
      });
+
+
+
+
+//     点赞时间
+     $(".left").click(function(){
+
+     })
+//     详情时间
+     $(".right").click(function(){
+         $(window).attr('location','//www.360.com');
+     })
     });   
 </script>
 

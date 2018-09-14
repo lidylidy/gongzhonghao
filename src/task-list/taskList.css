@@ -18,7 +18,7 @@ div{
     color:#ffffff;
 }
 .left{
-    color:#ffffff;
+    color:green;
     align-items:center;
     display: flex;
     width: 0.5rem;
@@ -29,13 +29,13 @@ div{
 }
 .center{
     color:#ffffff;
-    width: calc( 100% - 1.3rem );
+    width: calc( 100% - 1.5rem );
     /*background: yellow;*/
 }
 .right{
-    color:#ffffff;
+    color:green;
     flex-direction: column;
-    width: 0.8rem;
+    width: 1rem;
     display: flex;    
     height: 0.5rem;
     /*background: blue;*/

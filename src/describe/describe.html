@@ -35,6 +35,7 @@
 
 <body>
 <header>名校邦</header>
+
 <div class="title bot1">
     去吃饭
 </div>
@@ -45,14 +46,14 @@
 </div>
 <div class="name">
     <span>姓名:</span>
-    <input type="text"/>
+    <input type="text" id="name"/>
 </div>
 <div class="postDiscuss">
     <div class="top">
         <span>评论：</span>
-        <textarea></textarea></div>
+        <textarea id="discuss"></textarea></div>
     <div class="bot">
-        <input type="submit" name="提交"/>
+        <input  id="sub" type="submit" name="提交"/>
     </div>
 
 
@@ -62,16 +63,24 @@
         <div class="top">
             <div class="left fl f12">{{1}}:{{1}}
             </div>
-            <div class="right f12 fr">(0)</div>
+            <div class="right f12 fr">赞{{0}}</div>
         </div>
         <div class="bot f12">
-            <i class="fl">时间</i>
-            <p class="fl">2018.9.11 18:22</p>
+            <i class="fl">时间&nbsp&nbsp&nbsp&nbsp</i>
+            <p class="fl f12">2018.9.11 18:22</p>
         </div>
     </div>
 </div>
 
 </body>
+<!--第一个要渲染的id-->
+<script id ="desCon" type="hext/html">
+
+</script>
+<!--评论内容的渲染-->
+<script id ="desDis" type="hext/html">
+
+</script>
 <!--************888888-->
 <script id="taskList" type="text/html">
     {{each data}}
@@ -84,19 +93,51 @@
 <script>
  $(document).ready(function(){
 //     数据在上面
-     $.ajax({
-         type: "GET",
-         url: "https://test.globalmxb.com/api/v1/task/publishLists",
-         data: "data",
-         dataType: "dataType",
-         success: function (response) {
+     /**
+      *
+      * 获取当前时间
+      */
+     function p(s) {
+         return s < 10 ? '0' + s: s;
+     }
 
-         },
-         err:function(err){
-            console.log(err);
-         }
+     var myDate = new Date();
+     var year=myDate.getFullYear();
+     var month=myDate.getMonth()+1;
+     var date=myDate.getDate();
+     var h=myDate.getHours();       //获取当前小时数(0-23)
+     var m=myDate.getMinutes();     //获取当前分钟数(0-59)
+     var s=myDate.getSeconds();
+
+     var now=year+'-'+p(month)+"-"+p(date)+" "+p(h)+':'+p(m)+":"+p(s);
+     console.log("time is");
+     console.log(now );
+
+     $("#sub").click(function(){
+        var name = $("#name").html();
+        var discuss= $("#discuss").html();
+         $.ajax({
+             type: "POST",
+             url: "https://test.globalmxb.com/api/v1/task/publishLists",
+             data: {
+                 time:now,
+                 name:name,
+                 discuss:discuss
+             },
+             dataType: "json",
+             success: function (response) {
+                console.log("success");
+//                 var html =template('taskList',data);
+//                 document.getElementById('lists').innerHTML = html;
+             },
+             err:function(err){
+                 console.log(err);
+                 console.log("err");
+             }
+         });
      });
-     console.log(data.data);
+
+
      var html =template('taskList',data);
      document.getElementById('lists').innerHTML = html;
 

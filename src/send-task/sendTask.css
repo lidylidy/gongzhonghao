@@ -79,11 +79,23 @@ footer .top{
 .pullDowm{
     width: 0.42rem;
     height: 0.22rem;
-    border: 0.01rpx;
+    border: 0.01rem;
     padding: 0rem 0.08rem; 
     background:green;
     border-radius: 0.1rem;
     margin-right: 0.1rem;
+    align-items: center;
+    display: flex;
+}
+.pullDowm >select{
+    align-items: center;
+    border: 0.01rem;
+}
+.pullDowm >select>option{
+    align-items: center;
+    border: 0.01rem;
+    width:0.1rem;
+    height: 0.12rem;
 }
 footer .top>input{
     width: 1.18rem;
