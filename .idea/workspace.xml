@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76ebe79c-3c61-4e42-ba25-48caf93de5e0" name="默认的" comment="" />
+    <list default="true" id="76ebe79c-3c61-4e42-ba25-48caf93de5e0" name="默认的" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/image/dianzan.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/image/shijian.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/image/xiangji.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/image/yanjing.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/base.css" afterPath="$PROJECT_DIR$/common/css/base.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/describe/describe.css" afterPath="$PROJECT_DIR$/src/describe/describe.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/describe/describe.html" afterPath="$PROJECT_DIR$/src/describe/describe.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/send-task/sendTask.css" afterPath="$PROJECT_DIR$/src/send-task/sendTask.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/send-task/sendTask.html" afterPath="$PROJECT_DIR$/src/send-task/sendTask.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task-list/taskList.css" afterPath="$PROJECT_DIR$/src/task-list/taskList.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task-list/taskList.html" afterPath="$PROJECT_DIR$/src/task-list/taskList.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="Project-gongzhonghao.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,18 +33,33 @@
     <favorites_list name="Project-gongzhonghao" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.50149256">
+    <splitter split-orientation="horizontal" split-proportion="0.24671917">
       <split-first>
         <leaf>
-          <file leaf-file-name="sendTask.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/send-task/sendTask.html">
+          <file leaf-file-name="describe.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/describe/describe.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3022388">
-                  <caret line="71" column="32" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="32" />
+                <state vertical-scroll-proportion="-12.137931">
+                  <caret line="68" column="51" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="51" />
                   <folding>
-                    <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="e#611#1161#0" expanded="false" />
+                    <element signature="e#3389#4074#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="taskList.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/task-list/taskList.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.84615386">
+                  <caret line="55" column="49" selection-start-line="55" selection-start-column="49" selection-end-line="55" selection-end-column="49" />
+                  <folding>
+                    <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#script#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#script#2;n#html#0;n#!!top" expanded="false" />
+                    <element signature="e#2530#11484#0" expanded="false" />
+                    <element signature="e#11510#11785#0" expanded="false" />
+                    <element signature="e#12312#13503#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -41,11 +69,52 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="sendTask.css" pinned="false" current-in-tab="true">
+          <file leaf-file-name="sendTask.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/send-task/sendTask.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-6.413793">
+                  <caret line="73" column="37" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
+                  <folding>
+                    <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#script#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="e#4220#4593#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="describe.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/describe/describe.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="base.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/common/css/base.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.43595505">
+                  <caret line="163" column="1" selection-start-line="163" selection-start-column="1" selection-end-line="163" selection-end-column="1" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="shijian.png" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/common/image/shijian.png">
+              <provider selected="true" editor-type-id="images">
+                <state />
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="sendTask.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/send-task/sendTask.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.88318586">
-                  <caret line="96" column="13" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="13" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="138" column="0" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -70,14 +139,14 @@
       <list>
         <option value="$PROJECT_DIR$/common/data/taskList.json" />
         <option value="$PROJECT_DIR$/src/describe/taskList.html" />
-        <option value="$PROJECT_DIR$/common/css/base.css" />
-        <option value="$PROJECT_DIR$/src/describe/describe.css" />
-        <option value="$PROJECT_DIR$/src/task-list/taskList.css" />
-        <option value="$PROJECT_DIR$/src/describe/describe.html" />
         <option value="$PROJECT_DIR$/common/js/utils.js" />
-        <option value="$PROJECT_DIR$/src/task-list/taskList.html" />
-        <option value="$PROJECT_DIR$/src/send-task/sendTask.html" />
+        <option value="$PROJECT_DIR$/src/task-list/taskList.css" />
         <option value="$PROJECT_DIR$/src/send-task/sendTask.css" />
+        <option value="$PROJECT_DIR$/src/send-task/sendTask.html" />
+        <option value="$PROJECT_DIR$/src/describe/describe.html" />
+        <option value="$PROJECT_DIR$/src/describe/describe.css" />
+        <option value="$PROJECT_DIR$/src/task-list/taskList.html" />
+        <option value="$PROJECT_DIR$/common/css/base.css" />
       </list>
     </option>
   </component>
@@ -89,10 +158,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="5" />
+    <option name="y" value="461" />
+    <option name="width" value="1381" />
+    <option name="height" value="605" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -123,6 +192,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -154,6 +224,10 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="task-list" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -183,13 +257,44 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-gongzhonghao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-gongzhonghao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-gongzhonghao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-gongzhonghao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="image" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -203,8 +308,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Project-gongzhonghao\common\image" />
+      <recent name="D:\Project-gongzhonghao\common\font" />
       <recent name="D:\Project-gongzhonghao\src\describe" />
       <recent name="D:\Project-gongzhonghao\common\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Project-gongzhonghao\common\image" />
+      <recent name="D:\Project-gongzhonghao\common\font" />
     </key>
   </component>
   <component name="RunManager">
@@ -261,10 +372,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="5" y="461" width="1381" height="605" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23432836" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14892033" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -319,18 +430,38 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/send-task/sendTask.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="82" column="23" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#4220#4593#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/send-task/sendTask.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/describe/describe.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="e#611#1161#0" expanded="false" />
+            <element signature="e#3389#4074#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -348,8 +479,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="e#611#1161#0" expanded="false" />
+            <element signature="e#3389#4074#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -377,13 +508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0924658">
-          <caret line="170" column="11" selection-start-line="170" selection-start-column="11" selection-end-line="170" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/task-list/taskList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -391,71 +515,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/describe/describe.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45486724">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/task-list/taskList.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70088494">
-          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/js/utils.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/image/xiangji.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/image/yanjing.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/task-list/taskList.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6830986">
+          <caret line="33" column="29" selection-start-line="28" selection-start-column="8" selection-end-line="33" selection-end-column="29" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/describe/describe.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6977612">
-          <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#611#1161#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/task-list/taskList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33955225">
-          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#script#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#2379#11333#0" expanded="false" />
-            <element signature="e#11359#11634#0" expanded="false" />
-            <element signature="e#12077#12092#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/send-task/sendTask.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3022388">
-          <caret line="71" column="32" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="32" />
+        <state vertical-scroll-proportion="-6.413793">
+          <caret line="73" column="37" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#script#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#script#2;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#4220#4593#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/send-task/sendTask.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.88318586">
-          <caret line="96" column="13" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="138" column="0" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/image/shijian.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/describe/describe.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/describe/describe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.137931">
+          <caret line="68" column="51" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="51" />
+          <folding>
+            <element signature="e#611#1161#0" expanded="false" />
+            <element signature="e#3389#4074#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/task-list/taskList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.84615386">
+          <caret line="55" column="49" selection-start-line="55" selection-start-column="49" selection-end-line="55" selection-end-column="49" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#2530#11484#0" expanded="false" />
+            <element signature="e#11510#11785#0" expanded="false" />
+            <element signature="e#12312#13503#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43595505">
+          <caret line="163" column="1" selection-start-line="163" selection-start-column="1" selection-end-line="163" selection-end-column="1" />
           <folding />
         </state>
       </provider>

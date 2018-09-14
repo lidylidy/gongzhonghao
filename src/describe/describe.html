@@ -63,14 +63,15 @@
         <div class="top">
             <div class="left fl f12">{{1}}:{{1}}
             </div>
-            <div class="right f12 fr">赞{{0}}</div>
+            <div class="right f12 fr"><i class="zan"></i>{{0}}</div>
         </div>
         <div class="bot f12">
-            <i class="fl">时间&nbsp&nbsp&nbsp&nbsp</i>
+            <i class="fl"><i class="icon iconTime"></i>&nbsp&nbsp&nbsp&nbsp</i>
             <p class="fl f12">2018.9.11 18:22</p>
         </div>
     </div>
 </div>
+<div id="infoAlert">请填写完整信息</div>
 
 </body>
 <!--第一个要渲染的id-->
@@ -97,44 +98,55 @@
       *
       * 获取当前时间
       */
-     function p(s) {
-         return s < 10 ? '0' + s: s;
+     var nowTime = function(){
+         function p(s) {
+             return s < 10 ? '0' + s: s;
+         }
+         var myDate = new Date();
+         var year=myDate.getFullYear();
+         var month=myDate.getMonth()+1;
+         var date=myDate.getDate();
+         var h=myDate.getHours();       //获取当前小时数(0-23)
+         var m=myDate.getMinutes();     //获取当前分钟数(0-59)
+         var s=myDate.getSeconds();
+         var now=year+'-'+p(month)+"-"+p(date)+" "+p(h)+':'+p(m)+":"+p(s);
+//         console.log("time is");
+//         console.log(now );
+         return now
      }
 
-     var myDate = new Date();
-     var year=myDate.getFullYear();
-     var month=myDate.getMonth()+1;
-     var date=myDate.getDate();
-     var h=myDate.getHours();       //获取当前小时数(0-23)
-     var m=myDate.getMinutes();     //获取当前分钟数(0-59)
-     var s=myDate.getSeconds();
-
-     var now=year+'-'+p(month)+"-"+p(date)+" "+p(h)+':'+p(m)+":"+p(s);
-     console.log("time is");
-     console.log(now );
-
+//点击提交评论信息
      $("#sub").click(function(){
-        var name = $("#name").html();
-        var discuss= $("#discuss").html();
-         $.ajax({
-             type: "POST",
-             url: "https://test.globalmxb.com/api/v1/task/publishLists",
-             data: {
-                 time:now,
-                 name:name,
-                 discuss:discuss
-             },
-             dataType: "json",
-             success: function (response) {
-                console.log("success");
+         console.log(nowTime());
+         var name = $("#name").val();
+         var discuss= $("#discuss").val();
+         if(name &&discuss){
+             $.ajax({
+                 type: "POST",
+                 url: "https://test.globalmxb.com/api/v1/task/publishLists",
+                 data: {
+                     time:nowTime(),
+
+                     name:name,
+                     discuss:discuss
+                 },
+                 dataType: "json",
+                 success: function (response) {
+                     console.log("success");
 //                 var html =template('taskList',data);
 //                 document.getElementById('lists').innerHTML = html;
-             },
-             err:function(err){
-                 console.log(err);
-                 console.log("err");
-             }
-         });
+                 },
+                 err:function(err){
+                     console.log(err);
+                     console.log("err");
+                 }
+             });
+         }else{
+             $("#infoAlert").fadeIn(setTimeout(function(){
+                 $("#infoAlert").fadeOut();
+             },3000));
+             console.log("zz");
+         }
      });
 
 

@@ -48,14 +48,16 @@
 <body>
     <header>名校邦</header>
     <div class="title">
-        <input class="tit_1" type="text" class="" placeholder="请输入标题">
+        <input class="tit_1" type="text" maxlength="10" placeholder="请输入标题">
     </div>
     <div class="scribe">
-        <textarea class="text1" placeholder="请输入任务描述" maxlength="400"></textarea>
-        <div class="photoList">
-            <div class="icon">
-                <i></i>
-                <span>添加图片或拍照</span>
+        <textarea class="text1" placeholder="请输入任务描述"
+                    maxlength="400"
+                  onkeyup="this.value=this.value.substring(0, 100)"></textarea>
+        <div class="photoList" >
+            <div id="photos" class="icon">
+                <img src="../../common/image/xiangji.png"  alt=""/>
+                <p>添加图片或拍照</p>
             </div>
         </div>
     </div>
@@ -63,33 +65,106 @@
     <div class="payment">
         <span>赏金</span>
         <span>￥</span>
-        <span>元</span>
+        <input  id="payment"type="text" value="0"/>
 
     </div>
     <footer>
         <div class="top">
             <div class="fl telText">联系方式</div>
             <div class="pullDowm fl">
-                <select class="f12">
-                    <option value="微信">微信</option>
-                    <option value="QQ">QQ</option>
-                    <option value="电话">电话</option>
-                    <option value="微博">微博</option>
+                <select class="f12 " id="type">
+                    <option value="1">微信</option>
+                    <option value="2">QQ</option>
+                    <option value="3">电话</option>
+                    <option value="4">微博</option>
                 </select>
             </div>
-            <input class="fl " placeholder="请输入联系方式" type="text">
+            <input id="number" class="fl " placeholder="请输入联系方式" type="text">
         </div>
-        <div class="bot">发布</div>   
-    </footer>  
+        <div class="bot">发布</div>
+    </footer>
+<div id="infoAlert">请填写完整信息</div>
 </body>
 <!--jssdk,接入-->
 <script src="http://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
-
+<script src="../../node_modules/jquery/dist/jquery.min.js">
+</script>
 <script>
+    $(document).ready(function(){
+//        全局变量保存当前的照片数量
+        var photoMount =0;
+//        照片点击事件
+        $("#photos").click(function() {
+            console.log(photoMount);
+            photoMount++;
+            if (photoMount <= 2) {
+                $("#photos").css('left', (1 * photoMount + 'rem'));
+            } else {
+                $("#photos").hide();
+            }
+
+        });
+//字符提示剩余字数函数
+//        $('.text1').keyup(function() {
+//            //    var val=$('#note2').val();
+//            //    var len=val.length;
+//            var len=this.value.length
+//            $('#text-count2').text(len);
+//
+//        });
+//        点击发布事件
+        $(".bot").click(function(){
+//            先来校验所有的值
+//            console.log("点击啦");
+            var name =$(".tit_1").val();
+            var discuss =$(".text1").val();
+            var payment =$("#payment").val();
+            var type=$("#type").val();
+            var number =$("#number").val();
+            var datas={
+                name:name,
+                discuss :discuss,
+                payment:payment,
+                type:type,
+                number:number
+            }
+//            console.log(datas);
+        if(datas.name&&datas.discuss&&
+            datas.payment&&datas.type&&datas.number){
+            console.log("ovwer");
+            $.ajax({
+                url:"www.baidu.com",
+                type:"POST",
+                data:{
+                    data:datas
+                },
+                dataType:"json",
+                success:function(){
+                    console.log("123");
+                },
+                err:function(){
+                    console.log("321");
+                }
+
+            })
+            window.location.href="../task-list/taskList.html";
+        }else{
+            console.log(datas);
+            $("#infoAlert").fadeIn(setTimeout(function(){
+                $("#infoAlert").fadeOut();
+            },3000));
+            console.log("zz");
+
+}
+
+//            $(window).attr('location','//www.360.com');
+        })
+    });
+
     wx.config({
         debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
         appId: '', // 必填，公众号的唯一标识
-        timestamp: , // 必填，生成签名的时间戳
+        timestamp:'' , // 必填，生成签名的时间戳
         nonceStr: '', // 必填，生成签名的随机串
         signature: '',// 必填，签名
         jsApiList: [

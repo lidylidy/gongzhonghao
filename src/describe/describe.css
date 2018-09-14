@@ -64,13 +64,23 @@
 }
 .getDiscuss .top .right{
     height: 0.16rem;
+    width: 0.3rem;
 }
+/*.zan{*/
+    /*display: inline-block;*/
+    /*width: 0.15rem;*/
+    /*height: 0.2rem;*/
+    /*background: url("../../common/image/dianzan.png") no-repeat center;*/
+    /*-webkit-background-size: 0.15rem;*/
+    /*background-size: 0.15rem;*/
+/*}*/
 
 .getDiscuss .bot{
     height: 0.15rem;
     padding-top:0.1rem;
 }
-{
-    padding: 0.1rem;
-    height: 42rem ;
-}
+
+/*{*/
+    /*padding: 0.1rem;*/
+    /*height: 42rem ;*/
+/*}*/

@@ -25,12 +25,26 @@ div{
     height: 0.45rem;
     /*background: pink;*/
     flex-direction: column;
-    /* text-align: center; */ 
+}
+.left > .zan{
+    width: 0.15rem;
+    height: 0.2rem;
+    background: url("../../common/image/dianzan.png") no-repeat center;
+    -webkit-background-size: 0.15rem;
+    background-size: 0.15rem;
 }
 .center{
     color:#ffffff;
     width: calc( 100% - 1.5rem );
     /*background: yellow;*/
+}
+.eye{
+    display: inline-block;
+    height: 0.12rem;
+    width: 0.12rem;
+    background: url("../../common/image/yanjing.png") no-repeat center;
+    -webkit-background-size: 0.12rem;
+    background-size: 0.12rem;
 }
 .right{
     color:green;

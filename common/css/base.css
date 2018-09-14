@@ -163,7 +163,7 @@ a:link,a:active,a:visited,a:hover {
     font-size: 0.20rem;
 }
 
-input, textarea{
+input, textarea,select,option{
     outline:none;
 }
 /* 附加 */
@@ -173,4 +173,40 @@ header{
     background-color:#2cced1;
     text-align: center;
     line-height: 0.5rem;
+}
+#infoAlert {
+    width: 1.4rem;
+    height: 0.5rem;
+    background: black;
+    color: white;
+    position: absolute;
+    top: 35%;
+    left: calc(50% - 0.7rem);
+    text-align: center;
+    line-height: 0.5rem;
+    -webkit-border-radius: 0.1rem;
+    -moz-border-radius: 0.1rem;
+    border-radius: 0.1rem;
+    display: none;
+}
+
+.icon{
+    display: inline-block;
+    width: 0.15rem;
+    height: 0.2rem;
+    /*background: url("../../common/image/dianzan.png") no-repeat center;*/
+    -webkit-background-size: 0.15rem;
+    background-size: 0.15rem;
+}.zan{
+     display: inline-block;
+     width: 0.15rem;
+     height: 0.2rem;
+     background: url("../../common/image/dianzan.png") no-repeat center;
+     -webkit-background-size: 0.15rem;
+     background-size: 0.15rem;
+ }
+.iconTime{
+    background: url("../../common/image/shijian.png") no-repeat center;
+    background-size: 0.15rem;
+    height: 0.17rem;
 }
